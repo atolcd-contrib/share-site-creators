@@ -22,15 +22,15 @@ Maven
 -----
 Add the dependencies and overlays to the POM files of your WAR projects.
 
-For the repository tier, in a project created with the all-in-one archetype, edit repo/pom.xml:
+For the repository tier, in a project created with the all-in-one archetype, edit platform/pom.xml:
 
 
     <dependencies>
       ...
       <dependency>
           <groupId>com.metaversant</groupId>
-          <artifactId>share-site-creators-repo</artifactId>
-          <version>0.0.7</version>
+          <artifactId>share-site-creators-platform</artifactId>
+          <version>0.0.8</version>
           <type>amp</type>
       </dependency>
       ...
@@ -40,7 +40,7 @@ For the repository tier, in a project created with the all-in-one archetype, edi
       ...
       <overlay>
           <groupId>com.metaversant</groupId>
-          <artifactId>share-site-creators-repo</artifactId>
+          <artifactId>share-site-creators-platform</artifactId>
           <type>amp</type>
       </overlay>
       ...
@@ -53,7 +53,7 @@ For the Share tier, in a project created with the all-in-one archetype, edit sha
       <dependency>
           <groupId>com.metaversant</groupId>
           <artifactId>share-site-creators-share</artifactId>
-          <version>0.0.7</version>
+          <version>0.0.8</version>
           <type>amp</type>
       </dependency>
       ...
@@ -77,7 +77,7 @@ Use `mvn install` to create the AMPs. When running with 5.1.f, you must specify 
 
 ### Install the AMPs
 
-You can install the AMPs as you normally would using the MMT. For example, to install on a server, you would copy `share-site-creators-repo.amp` to `$ALFRESCO_HOME/amps` and copy `share-site-creators-share.amp` to `$ALFRESCO_HOME/amps_share`, then run `bin/apply_amps.sh`.
+You can install the AMPs as you normally would using the MMT. For example, to install on a server, you would copy `share-site-creators-platform.amp` to `$ALFRESCO_HOME/amps` and copy `share-site-creators-share.amp` to `$ALFRESCO_HOME/amps_share`, then run `bin/apply_amps.sh`.
 
 For developers looking to contribute who are running locally, you can use the Maven plug-in to install the AMP by running `mvn alfresco:install -Dmaven.alfresco.warLocation=$TOMCAT_HOME/webapps/alfresco` for the repo AMP and `mvn alfresco:install -Dmaven.alfresco.warLocation=$TOMCAT_HOME/webapps/share` for the Share AMP. If you are not running your Alfresco and Share WARs expanded specify the WAR file path instead of the directory.
 
@@ -93,6 +93,6 @@ The SITE_CREATORS group will be created for you automatically. If, for some reas
 
 Using a Different Group Name
 ------------------------
-If you want to use a different group it needs to be changed in two places. First, in the repo project, change `src/main/amp/config/alfresco/module/share-site-creators-repo/context/service-context.xml`. Do a search for "GROUP_SITE_CREATORS" and you'll find it.
+If you want to use a different group it needs to be changed in two places. First, in the repo project, change `src/main/amp/config/alfresco/module/share-site-creators-platform/context/service-context.xml`. Do a search for "GROUP_SITE_CREATORS" and you'll find it.
 
 Second, you can either change the group when you deploy the module, or in the Share tier project, change the evaluator declaration in `src/main/amp/config/alfresco/web-extension/site-data/site-creators-module-extension.xml`.
