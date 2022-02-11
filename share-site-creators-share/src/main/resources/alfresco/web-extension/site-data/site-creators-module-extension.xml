@@ -1,30 +1,30 @@
 <extension>
-    <modules>
-        <module>
-            <id>Share Site Creators</id>
-            <version>1.0</version>
-            <auto-deploy>true</auto-deploy>
-            <evaluator type="group.module.evaluator">
-                <params>
-                    <groups>GROUP_SITE_CREATORS</groups>
-                    <groupRelation>AND</groupRelation>
-                    <negate>true</negate>
-                </params>
-            </evaluator>
-            <customizations>
-                <customization>
-                    <targetPackageRoot>org.alfresco.components.dashlets</targetPackageRoot>
-                    <sourcePackageRoot>com.ecmarchitect.components.dashlets</sourcePackageRoot>
-                </customization>
-                <customization>
-                    <targetPackageRoot>org.alfresco.share.header</targetPackageRoot>
-                    <sourcePackageRoot>com.ecmarchitect.share.header</sourcePackageRoot>
-                </customization>
-                <customization>
-                    <targetPackageRoot>org.alfresco.share.pages</targetPackageRoot>
-                    <sourcePackageRoot>com.ecmarchitect.share.pages</sourcePackageRoot>
-                </customization>
-            </customizations>
-        </module>
-    </modules>
+  <modules>
+    <module>
+      <id>Share Site Creators</id>
+      <version>1.0</version>
+      <auto-deploy>true</auto-deploy>
+      <evaluator type="group.module.evaluator">
+        <params>
+          <groups>GROUP_SITE_CREATORS</groups>
+          <groupRelation>AND</groupRelation>
+          <negate>true</negate>
+        </params>
+      </evaluator>
+      <customizations>
+        <customization>
+          <targetPackageRoot>org.alfresco.components.dashlets</targetPackageRoot>
+          <sourcePackageRoot>com.ecmarchitect.components.dashlets</sourcePackageRoot>
+        </customization>
+        <customization>
+          <targetPackageRoot>org.alfresco.share.header</targetPackageRoot>
+          <sourcePackageRoot>com.ecmarchitect.share.header</sourcePackageRoot>
+        </customization>
+        <customization>
+          <targetPackageRoot>org.alfresco.share.pages</targetPackageRoot>
+          <sourcePackageRoot>com.ecmarchitect.share.pages</sourcePackageRoot>
+        </customization>
+      </customizations>
+    </module>
+  </modules>
 </extension>
