@@ -21,4 +21,12 @@
   <!-- This is filtered by Maven at build time, so that module name is single sourced. -->
   <import resource="classpath:alfresco/module/${artifactId}/context/service-context.xml" />
   <import resource="classpath:alfresco/module/${artifactId}/context/bootstrap-context.xml" />
+
+  <!-- ATOLCD - Custom The ModuleService implementation -->
+  <bean class="com.atolcd.repo.module.ImplementationClassReplacingBeanFactoryPostProcessor">
+    <property name="targetBeanName" value="moduleService" />
+    <property name="originalClassName" value="org.alfresco.repo.module.ModuleServiceImpl" />
+    <property name="replacementClassName" value="com.atolcd.repo.module.CustomModuleServiceImpl" />
+    <property name="active" value="true" />
+  </bean>
 </beans>
