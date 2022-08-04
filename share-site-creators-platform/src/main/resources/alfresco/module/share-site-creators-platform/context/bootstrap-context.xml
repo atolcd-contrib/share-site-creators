@@ -3,35 +3,36 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
-    <!-- The bootstrap-context.xml file is used for patch definitions, importers, 
-		 workflow, and loading custom content models.  -->
+  <!-- The bootstrap-context.xml file is used for patch definitions, importers,
+       workflow, and loading custom content models.  -->
 
-    <bean id="share-site-creators-repo.groupsLoader.resourceBundle"
-          class="org.alfresco.i18n.ResourceBundleBootstrapComponent">
-        <property name="resourceBundles">
-            <list>
-                <value>alfresco.module.${artifactId}.messages.bootstrap-messages</value>
-            </list>
-        </property>
-    </bean>
+  <bean id="share-site-creators-repo.groupsLoader.resourceBundle"
+        class="org.alfresco.i18n.ResourceBundleBootstrapComponent">
+    <property name="resourceBundles">
+      <list>
+        <value>alfresco.module.share-site-creators-platform.messages.bootstrap-messages</value>
+      </list>
+    </property>
+  </bean>
 
-    <bean id="share-site-creators-repo.groupsLoader"
-          class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
-          parent="basePatch" >
-        <property name="id"><value>share-site-creators-repo.groupsLoader</value></property>
-        <property name="description"><value>share-site-creators-repo.groupsLoader.description</value></property>
-        <property name="fixesFromSchema"><value>0</value></property>
-        <property name="fixesToSchema"><value>${version.schema}</value></property>
-        <property name="targetSchema"><value>20000</value></property>
-        <property name="importerBootstrap">
-            <ref bean="spacesBootstrap" />
-        </property>
-        <property name="bootstrapView">
-            <props>
-                <prop key="path">/${alfresco_user_store.system_container.childname}</prop>
-                <prop key="location">alfresco/module/${artifactId}/bootstrap/create-group.xml</prop>
-            </props>
-        </property>
-    </bean>
+  <bean id="share-site-creators-repo.groupsLoader"
+        class="com.atolcd.site.creator.repo.bootstrap.ScriptExecuter"
+        parent="module.baseComponent">
+    <property name="moduleId" value="${artifactId}"/>
+    <property name="name" value="share-site-creators-repo.groupsLoader"/>
+    <property name="description" value="share-site-creators-repo.groupsLoader.description"/>
+    <property name="executeOnceOnly" value="true"/>
+    <property name="nodeService">
+      <ref bean="nodeService"/>
+    </property>
+    <property name="scriptService">
+      <ref bean="scriptService"/>
+    </property>
+    <property name="scripts">
+      <list>
+        <value>alfresco/module/share-site-creators-platform/scripts/create-site-creator-group.js</value>
+      </list>
+    </property>
+  </bean>
 
 </beans>
