@@ -27,7 +27,7 @@
     <files>
         <!-- Filter module.properties and put at top level in the AMP -->
         <file>
-            <source>src/main/resources/alfresco/module/${project.artifactId}/module.properties</source>
+            <source>src/main/resources/alfresco/module/share-site-creators-platform/module.properties</source>
             <filtered>true</filtered>
         </file>
         <!-- Include AMP -> WAR mapping file (needed for custom mappings) -->
