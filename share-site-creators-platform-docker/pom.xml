@@ -19,7 +19,7 @@
   <dependencies>
     <dependency>
       <groupId>com.metaversant</groupId>
-      <artifactId>share-site-creators-platform-72X</artifactId>
+      <artifactId>share-site-creators-72X-platform</artifactId>
       <version>0.0.8-SNAPSHOT</version>
     </dependency>
     <!-- Add any additional AMPs or extension JARs here that you want to be deployed in Alfresco -->
