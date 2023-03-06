@@ -21,3 +21,5 @@ COPY share-config-custom.xml $TOMCAT_DIR/shared/classes/alfresco/web-extension
 
 COPY log4j.properties $TOMCAT_DIR/webapps/share/WEB-INF/classes
 COPY hotswap-agent.properties $TOMCAT_DIR/webapps/share/WEB-INF/classes
+
+COPY context.xml $TOMCAT_DIR/conf

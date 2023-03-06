@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>share-site-creators-share-docker</artifactId>
   <name>Alfresco Share Docker Module</name>
@@ -9,8 +9,8 @@
 
   <parent>
     <groupId>com.metaversant</groupId>
-    <artifactId>share-site-creators-72X</artifactId>
-    <version>0.0.8-SNAPSHOT</version>
+    <artifactId>share-site-creators-73X</artifactId>
+    <version>0.0.9-SNAPSHOT</version>
   </parent>
 
   <properties>
@@ -19,8 +19,15 @@
   <dependencies>
     <dependency>
       <groupId>com.metaversant</groupId>
-      <artifactId>share-site-creators-72X-share</artifactId>
-      <version>0.0.8-SNAPSHOT</version>
+      <artifactId>share-site-creators-73X-share</artifactId>
+      <version>0.0.9-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.orderofthebee.support-tools</groupId>
+      <artifactId>support-tools-share</artifactId>
+      <version>${support-tools.version}</version>
+      <classifier>amp</classifier>
+      <type>amp</type>
     </dependency>
   </dependencies>
 

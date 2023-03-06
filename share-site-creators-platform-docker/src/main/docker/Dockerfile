@@ -11,6 +11,7 @@ RUN localedef -c -i fr_FR -f UTF-8 fr_FR.UTF-8
 ENV LANG fr_FR.UTF-8
 ENV LANGUAGE fr_FR
 ENV LC_ALL fr_FR.UTF-8
+ENV TZ="Europe/Paris"
 
 # Copy Dockerfile to avoid an error if no JARs exist
 COPY Dockerfile extensions/*.jar $TOMCAT_DIR/webapps/alfresco/WEB-INF/lib/
@@ -26,5 +27,7 @@ COPY disable-webscript-caching-context.xml $TOMCAT_DIR/shared/classes/alfresco/e
 
 # Copy Dockerfile to avoid an error if no license file exists
 COPY Dockerfile license/*.* $TOMCAT_DIR/webapps/alfresco/WEB-INF/classes/alfresco/extension/license/
+
+COPY context.xml $TOMCAT_DIR/conf
 
 USER ${USERNAME}

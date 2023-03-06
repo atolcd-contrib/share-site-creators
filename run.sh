@@ -108,6 +108,11 @@ case "$1" in
   stop)
     down
     ;;
+  restart)
+    down
+    start
+    tail
+    ;;
   reset)
     down
     purge
@@ -156,5 +161,5 @@ case "$1" in
     tail_ass
     ;;
   *)
-    echo "Usage: $0 {build_start|start|stop|reset|purge|tail|tail_acs|tail_share|tail_ass|reload_share|reload_acs|ssh_acs|ssh_ass|ssh_share|reindex_ass}"
+    echo "Usage: $0 {build_start|start|stop|restart|reset|purge|tail|tail_acs|tail_share|tail_ass|reload_share|reload_acs|ssh_acs|ssh_ass|ssh_share|reindex_ass}"
 esac
