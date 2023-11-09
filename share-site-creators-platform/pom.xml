@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>share-site-creators-73X-platform</artifactId>
+  <artifactId>share-site-creators-74X-platform</artifactId>
   <name>share-site-creators-repo AMP project</name>
   <description>Changes the permissions so that only members of a specific group can create sites.</description>
   <packaging>jar</packaging>
 
   <parent>
     <groupId>com.metaversant</groupId>
-    <artifactId>share-site-creators-73X</artifactId>
+    <artifactId>share-site-creators-74X</artifactId>
     <version>0.0.9-SNAPSHOT</version>
   </parent>
 
