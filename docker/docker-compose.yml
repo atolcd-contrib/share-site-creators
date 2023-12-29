@@ -34,7 +34,7 @@ services:
     depends_on:
       - share-site-creators-postgres
   share-site-creators-postgres:
-    image: postgres:13.3
+    image: postgres:15.4
     environment:
       POSTGRES_DB: alfresco
       POSTGRES_USER: alfresco
@@ -63,7 +63,7 @@ services:
       - share-site-creators-ass-volume:/opt/alfresco-search-services/data
 
   transform-core-aio:
-    image: alfresco/alfresco-transform-core-aio:3.0.0
+    image: alfresco/alfresco-transform-core-aio:5.0.1
     environment:
       JAVA_OPTS: " -XX:MinRAMPercentage=50 -XX:MaxRAMPercentage=80"
       ACTIVEMQ_URL: "nio://activemq:61616"

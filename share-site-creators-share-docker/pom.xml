@@ -9,7 +9,7 @@
 
   <parent>
     <groupId>com.metaversant</groupId>
-    <artifactId>share-site-creators-74X</artifactId>
+    <artifactId>share-site-creators-23X</artifactId>
     <version>0.0.10-SNAPSHOT</version>
   </parent>
 
@@ -19,16 +19,16 @@
   <dependencies>
     <dependency>
       <groupId>com.metaversant</groupId>
-      <artifactId>share-site-creators-74X-share</artifactId>
+      <artifactId>share-site-creators-23X-share</artifactId>
       <version>0.0.10-SNAPSHOT</version>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>org.orderofthebee.support-tools</groupId>
       <artifactId>support-tools-share</artifactId>
       <version>${support-tools.version}</version>
       <classifier>amp</classifier>
       <type>amp</type>
-    </dependency>
+    </dependency> -->
   </dependencies>
 
   <build>
