@@ -11,7 +11,7 @@
   <parent>
     <groupId>com.metaversant</groupId>
     <artifactId>share-site-creators-74X</artifactId>
-    <version>0.0.9-SNAPSHOT</version>
+    <version>0.0.10-SNAPSHOT</version>
   </parent>
 
   <properties>
