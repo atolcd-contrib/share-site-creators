@@ -401,43 +401,16 @@
     </profile>
   </profiles>
 
-  <!-- For internal use only (atolcd) -->
-  <distributionManagement>
-    <repository>
-      <id>maven-registry</id>
-      <url>https://maven-registry.priv.atolcd.com</url>
-      <name>Releases</name>
-    </repository>
-    <snapshotRepository>
-      <id>maven-snapshot-registry</id>
-      <url>https://maven-snapshot-registry.priv.atolcd.com</url>
-      <name>Snapshot</name>
-    </snapshotRepository>
-  </distributionManagement>
-
   <!--
     Alfresco Maven Repositories
   -->
   <repositories>
-    <!-- For internal use only (atolcd) -->
-    <repository>
-      <id>maven-snapshot-registry</id>
-      <name>Atol CD Snapshots</name>
-      <url>https://maven-snapshot-registry.priv.atolcd.com</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
-
     <repository>
       <id>alfresco-public</id>
       <url>https://artifacts.alfresco.com/nexus/content/groups/public</url>
     </repository>
 
-    <!--
+
     <repository>
       <id>alfresco-public-snapshots</id>
       <url>https://artifacts.alfresco.com/nexus/content/groups/public-snapshots</url>
@@ -446,7 +419,6 @@
         <updatePolicy>daily</updatePolicy>
       </snapshots>
     </repository>
-    -->
 
     <!-- Alfresco Enterprise Edition Artifacts, put username/pwd for server in settings.xml -->
     <!-- http://docs.alfresco.com/5.0/tasks/alfresco-sdk-tutorials-configure-maven-enterprise.html -->
