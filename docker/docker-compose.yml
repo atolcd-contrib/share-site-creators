@@ -63,7 +63,7 @@ services:
       - share-site-creators-ass-volume:/opt/alfresco-search-services/data
 
   transform-core-aio:
-    image: alfresco/alfresco-transform-core-aio:5.1.5
+    image: client-docker-registry.atolcd.com/atolcd/hyland-base-images/transform-core:5.2.0-2.1.0
     environment:
       JAVA_OPTS: " -XX:MinRAMPercentage=50 -XX:MaxRAMPercentage=80"
       ACTIVEMQ_URL: "nio://activemq:61616"
