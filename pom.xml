@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.metaversant</groupId>
-  <artifactId>share-site-creators-234X</artifactId>
+  <artifactId>share-site-creators-251X</artifactId>
   <version>0.0.10-SNAPSHOT</version>
   <name>Share Site Creators</name>
   <description>Changes the permissions so that only members of a specific group can create sites.</description>
@@ -39,10 +39,10 @@
     <!-- Properties used in dependency declarations, you don't need to change these -->
     <alfresco.groupId>org.alfresco</alfresco.groupId>
     <alfresco.bomDependencyArtifactId>acs-community-packaging</alfresco.bomDependencyArtifactId>
-    <alfresco.platform.version>23.4.0</alfresco.platform.version>
+    <alfresco.platform.version>25.1.0</alfresco.platform.version>
     <alfresco.platform.docker.user>alfresco</alfresco.platform.docker.user>
-    <alfresco.share.version>23.4.0.46</alfresco.share.version>
-    <alfresco.share.docker.version>23.4.0</alfresco.share.docker.version>
+    <alfresco.share.version>25.1.0.56</alfresco.share.version>
+    <alfresco.share.docker.version>25.1.0</alfresco.share.docker.version>
 
     <!-- Docker images -->
     <docker.acs.image>alfresco/alfresco-content-repository-community</docker.acs.image>
@@ -51,7 +51,7 @@
     <docker.activemq.image>alfresco/alfresco-activemq</docker.activemq.image>
 
     <!-- Alfresco search service -->
-    <alfresco.ass.version>2.0.12</alfresco.ass.version>
+    <alfresco.ass.version>2.0.15</alfresco.ass.version>
 
     <!-- ActiveMQ -->
     <activemq.version>5.18.6</activemq.version>
@@ -71,7 +71,7 @@
     <java.version>17</java.version>
 
     <!-- Modules AMP-->
-    <support-tools.version>1.2.1.0</support-tools.version>
+    <support-tools.version>1.2.3.0</support-tools.version>
 
     <keystore.settings>
       -Dencryption.keystore.type=JCEKS
