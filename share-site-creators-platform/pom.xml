@@ -10,7 +10,7 @@
   <parent>
     <groupId>com.metaversant</groupId>
     <artifactId>share-site-creators-251X</artifactId>
-    <version>0.0.10-SNAPSHOT</version>
+    <version>0.0.11-SNAPSHOT</version>
   </parent>
 
   <properties>
