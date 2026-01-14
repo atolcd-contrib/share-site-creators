@@ -9,7 +9,7 @@
 
   <parent>
     <groupId>com.metaversant</groupId>
-    <artifactId>share-site-creators-252X</artifactId>
+    <artifactId>share-site-creators-253X</artifactId>
     <version>0.0.11-SNAPSHOT</version>
   </parent>
 
@@ -19,7 +19,7 @@
   <dependencies>
     <dependency>
       <groupId>com.metaversant</groupId>
-      <artifactId>share-site-creators-252X-share</artifactId>
+      <artifactId>share-site-creators-253X-share</artifactId>
       <version>0.0.11-SNAPSHOT</version>
     </dependency>
     <dependency>
