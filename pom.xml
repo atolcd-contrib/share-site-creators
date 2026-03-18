@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.metaversant</groupId>
-  <artifactId>share-site-creators-253X</artifactId>
+  <artifactId>share-site-creators-25X</artifactId>
   <version>0.0.11-SNAPSHOT</version>
   <name>Share Site Creators</name>
   <description>Changes the permissions so that only members of a specific group can create sites.</description>
@@ -43,6 +43,7 @@
     <alfresco.platform.docker.user>alfresco</alfresco.platform.docker.user>
     <alfresco.share.version>25.3.0.56</alfresco.share.version>
     <alfresco.share.docker.version>25.3.0</alfresco.share.docker.version>
+    <alfresco.compatibility.version>25X</alfresco.compatibility.version>
 
     <!-- Docker images -->
     <docker.acs.image>alfresco/alfresco-content-repository-community</docker.acs.image>
